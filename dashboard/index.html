@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!--Material CDN-->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="pictures/small_long_logo.png" alt="" class="emblem" />
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-symbols-sharp"> close </span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-symbols-sharp"> grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp">laptop </span>
+            <h3>Trips</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp">stacked_line_chart</span>
+            <h3>Finances</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> notifications</span>
+            <h3>Notifications</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> email</span>
+            <h3>Messages</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> logout</span>
+            <h3>Log Out</h3>
+          </a>
+        </div>
+      </aside>
+      <!--End Of Sidebar-->
+      <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+          <input type="date" />
+        </div>
+        <div class="main-container">
+          <div class="insights">
+            <div class="trips">
+              <span class="material-symbols-sharp"> commute </span>
+              <div class="middle">
+                <div class="left">
+                  <h3>Trips Booked</h3>
+                  <h1>9 trips</h1>
+                  <div class="text">
+                    <p>Published Trips</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Of Trips -->
+          <div class="insights">
+            <div class="bookings">
+              <span class="material-symbols-sharp"> redeem </span>
+              <div class="middle">
+                <div class="left">
+                  <h3>This Month</h3>
+                  <h1>3</h1>
+                  <div class="text">
+                    <p>Trip Bookings</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Of Trip Bookings-->
+          <div class="insights">
+            <div class="balance">
+              <span class="material-symbols-sharp"> Thumb_up </span>
+              <div class="middle">
+                <div class="left">
+                  <h1>GHS 00.00</h1>
+                  <div class="text">
+                    <p>Withdrawn Balance</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Of Withdrawn Balance-->
+
+          <div class="trip-performances">
+            <h2>Trip Performance</h2>
+            <table>
+              <thead>
+                <tr></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Google</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <p class="up">
+                      7%
+                      <span class="material-symbols-sharp"> trending_up </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Firefox</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <p class="up">
+                      9%
+                      <span class="material-symbols-sharp"> trending_up </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Internet Explorer</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <p class="down">
+                      3%<span class="material-symbols-sharp">
+                        trending_down
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Safari</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <p class="down">
+                      2.8%<span class="material-symbols-sharp">
+                        trending_down
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Opera</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <p class="up">
+                      6.2%
+                      <span class="material-symbols-sharp"> trending_up </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mobile And Tablet</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <p class="up">
+                      8%
+                      <span class="material-symbols-sharp"> trending_up </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Others</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <p class="down">
+                      5.4%
+                      <span class="material-symbols-sharp">
+                        trending_down
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#">Show All</a>
+          </div>
+        </div>
+      </main>
+      <!---END OF MAIN-->
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-symbols-sharp"> menu </span>
+          </button>
+          <div class="profile">
+            <div class="info">
+              <p>Hey,<b>Kweku</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="pictures/account_image.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--END OF TOP-->
+        <div class="messages">
+          <h2>Recent Messages</h2>
+          <div class="recent-messages">
+            <div class="latest-message">
+              <div class="profile-photo">
+                <img src="pictures/uncropped2.jpeg" alt="" />
+              </div>
+              <div class="content">
+                <p>
+                  <b>Sylvester (Design)</b> The designs for the project is ready
+                </p>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+
+            <div class="latest-message">
+              <div class="profile-photo">
+                <img src="pictures/cropped1.jpeg" alt="" />
+              </div>
+              <div class="content">
+                <p>
+                  <b>Alicia(Marketing)</b> The Radio station greenlit our ad.
+                </p>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+            <div class="latest-message">
+              <div class="profile-photo">
+                <img src="pictures/tinyimage5 (2).jpeg" alt="" />
+              </div>
+              <div class="content">
+                <p>
+                  <b>Mo(accounting)</b> The prices review is not going too great
+                  boss.
+                </p>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+            <div class="latest-message">
+              <div class="profile-photo">
+                <img src="pictures/tinyimage5 (3).jpeg" alt="" />
+              </div>
+              <div class="content">
+                <p>
+                  <b>Charles (Development)</b> When will the desings for the
+                  project arrive Sir.
+                  <small class="text-muted"></small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
